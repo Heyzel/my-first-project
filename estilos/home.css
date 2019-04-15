@@ -1,0 +1,257 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Helvetica", Arial;
+}
+/* Cuerpo de la pagina */
+body{
+	background-image: url(../imagenes/linkin-park.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.caja{
+	width: 65%;
+	padding:30px;
+	position: relative;
+	background: white;
+	left:15%;
+	top:20px;
+}
+
+/*Cabecera*/
+.encabezado{
+	padding:5px;
+	display:block;
+	font-size:35px;
+	background:#BD3588; /*Moradito*/
+	color:white;
+	width:8em;
+	letter-spacing: .1em;
+	box-shadow: 2px 2px 1px gray;
+	height:1.5em;
+	line-height: 1.6em;
+	text-align: center;
+}
+nav{
+	margin-top: 30px;
+	background: #5D6064;
+	width: 100%;
+	margin-bottom: 0.1em
+}
+
+nav ul{
+	line-height:1.5em;
+}
+
+nav ul li{
+	height: 1.5em;
+	padding:10px 20px;
+	display:inline-block;
+	cursor: pointer;
+}
+
+
+nav ul li:hover{
+	background:#BD3588; /*Mismo moradito*/
+}
+
+nav ul li a{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-align: center;
+	display:block;
+	color:white;
+	text-decoration: none;
+}
+
+/*Slider*/
+
+/*Texto de relleno*/
+
+.articles{
+	width: 65%;
+	float:left;
+	padding:0.1em;
+}
+
+.articles h2{
+	margin-top:0.5em;
+	font-size:2.2em;
+	color:#5D6064;
+}
+
+.ppp{
+	font-size: 1em;
+	margin-top: 0.1em;
+	color:gray;
+}
+
+.pp{
+	margin-top: 0.3em;
+	padding-right:1em;
+	font-size: 1.2em;
+	color:#5D6064;
+	line-height: 1.3em;
+	text-align: justify;
+}
+
+.botonsito{
+	display:block;
+	font-size: 14px;
+	padding:1em;
+	width: 6.8em;
+	text-align: center;
+	background: #BD3588; /*Mismo moradito*/
+	color:white;
+	text-decoration: none;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border-radius: 2px;
+}
+
+hr{
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#Lusuario{
+	float:left;
+	font-size: 1em;
+	margin-top: 1em;
+	margin-right: 1em;
+}
+aside .botonsito{
+	font-weight: bold;
+	width: 7em;
+	float:left;
+}
+
+aside{
+	width:30%;
+	float:left;
+	margin-top: 1.5em;
+	color:#5D6064;
+}
+
+aside h4{
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+.imagen-usuario{
+	width: 100%;
+	position:relative;
+	left:0.8em;
+}
+
+aside p{
+	margin-top:0.8em;
+	position: relative;
+	left:0.8em;
+	text-align: justify;
+	line-height: 1.2em;
+}
+
+aside div{
+	margin-top: 1em;
+}
+
+form{
+	display:block;
+	padding:0.2em;
+}
+
+h3{
+	text-align: center;
+}
+
+label{
+	display:block;
+	width: 100%
+}
+form input[type="password"], form input[type="text"]{
+	margin:0.25em;
+	display:block;
+	border-radius: 2px;
+	padding:2px;
+	box-sizing:border-box;
+	border:2px solid #BD3588;
+}
+/*
+form input[type="text"]{
+	margin:0.25em;
+	display:block;
+	border-radius: 2px;
+	padding:2px;
+	box-sizing:border-box;
+	border:2px solid #BD3588;
+}*/
+
+input:focus{
+	outline: none;
+}
+
+form input[type="submit"]{
+	display:block;
+	font-size: 14px;
+	padding:0.5em;
+	width: 58%;
+	border-radius: 2px;
+	text-align: center;
+	background: #BD3588; /*Mismo moradito*/
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	margin-left: 0.3em;
+	cursor: pointer;
+	border:0px;
+}
+
+form p{
+	display:none;
+	color:red;
+	font-size: 0.75em;
+}
+
+.clear{
+	float: none;
+	clear:both;
+}
+
+footer{
+	float:none;
+	clear:both;
+	margin-top: 30px;
+	background: #5D6064;
+	width: 100%;
+	margin-bottom: 0.1em;
+}
+
+
+footer img{
+	margin:0.5em; 
+	width:6%;
+	border-radius: 50%;
+}
+
+footer span{
+	position: relative;
+	left:6.5em;
+}
+
+.ig{
+	position: relative;
+	bottom:1.5em;
+	color:white;
+	font-weight: bold;
+	margin-right: 2.5em;
+}
+
+.clear{
+	float: none;
+	clear:both;
+}

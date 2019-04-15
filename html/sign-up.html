@@ -1,0 +1,50 @@
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="../estilos/sign-up.css">
+	<script type="text/javascript" src = "../scripts/formulario.js"></script>
+	<title>Pagina cool</title>
+</head>
+<body>
+	<div class = "caja">
+		<header>
+			<h1 class = "encabezado">Practicando</h1>
+			<nav>
+				<ul>
+					<li><b><a href="../index.html">INICIO</a></b></li>
+					<li><b><a href="html/clock.html">RELOJ</a></b></li>
+					<li><b><a href="html/about-me.html">SOBRE MI</a></b></li>
+					<li><b><a href="#">REGISTRAR</a></b></li>
+				</ul>
+			</nav>
+		</header>
+		<section class = "registro">
+			<h2>Registro</h2>
+			<form id="reg" onsubmit="return false;">
+				<label for = "Username">Nombre de usuario:</label>
+				<p class = "usu">El usuario ya está en uso</p>
+				<input type = "text" id = "Username"/>
+				<label for = "pass">Contraseña:</label>
+				<p class = "contra">Las contraseñas no coinciden</p>
+				<input type = "password" id = "pass"/>
+				<label for = "repass">Repita la contraseña:</label>
+				<input type = "password" id = "repass"/>
+				<label for = "correo">Correo electronico:</label>
+				<p class = "mail">El correo ya está en uso</p>
+				<input type = "email" id = "correo"/>
+				<input type = "submit" value = "Registrar"/>
+				<a href="../index.html" class = "botonsito">Volver</a>
+			</form>
+		</section>
+		<footer>
+			<span> <img src="../imagenes/yo.jpg"/></span>
+			<span class = "ig" >@99heyzel</span> 
+			<span><img src="../imagenes/andrea.jpg"/></span>
+			<span class = "ig" >@anmau1910</span>
+			<span><img src="../imagenes/miguel.jpg"/></span>
+			<span class = "ig" >@whatevering_around</span>
+			<span class = "clear"></span>
+		</footer>
+	</div>
+</body>
+</html>

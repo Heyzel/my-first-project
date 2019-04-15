@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="../estilos/failed.css">
+	<script type="text/javascript" src = "../scripts/failed.js"></script>
+	<title>Pagina cool</title>
+</head>
+<body>
+	<div class = "caja">
+		<header>
+			<h1 class = "encabezado">Practicando</h1>
+			<!-- Menu -->
+			<nav>
+				<ul>
+					<li><b><a href="../index.html">INICIO</a></b></li>
+					<li><b><a href="html/clock.html">RELOJ</a></b></li>
+					<li><b><a href="#">SOBRE MI</a></b></li>
+					<li><b><a href="html/sign-up.html">REGISTRAR</a></b></li>
+				</ul>
+			</nav>
+		</header>
+		<section class = "main">
+			<h2 class = "failedh2">Para acceder a esta sección primero debes iniciar sesión.</h2>
+			<hr/>
+			<div id = "flogin" class = "flogin">
+				<h3>Login</h3>
+				<form id = "flogear" onsubmit = "return false;">
+					<label for = "fusuario"><b>Usuario: </b></label>
+					<input type = "text" id = "fusuario"/>
+					<p id = "fwarning">El usuario no existe</p>
+					<label for = "fcontraseña"><b>Contraseña: </b></label>
+					<input type = "password" id = "fcontraseña"/>
+					<p id = "fwarning2">La contraseña es incorrecta</p>
+					<input type = "submit" value = "Iniciar sesión"/>
+					<a href="sign-up.html" class = "fregistro">Registrarme</a>
+				</form>
+			</div>
+		</section>
+		<span class = "clear"></span>
+		<footer>
+			<span> <img src="../imagenes/yo.jpg"/></span>
+			<span class = "ig" >@99heyzel</span> 
+			<span><img src="../imagenes/andrea.jpg"/></span>
+			<span class = "ig" >@anmau1910</span>
+			<span><img src="../imagenes/miguel.jpg"/></span>
+			<span class = "ig" >@whatevering_around</span>
+			<span class = "clear"></span>
+		</footer>
+	</div>
+</body>
+</html>

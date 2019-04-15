@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Helvetica", Arial;
+}
+/* Cuerpo de la pagina */
+body{
+	background-image: url(../imagenes/linkin-park.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.caja{
+	width: 65%;
+	padding:30px;
+	position: relative;
+	background: white;
+	left:15%;
+	top:20px;
+}
+
+/*Cabecera*/
+.encabezado{
+	padding:5px;
+	display:block;
+	font-size:35px;
+	background:#BD3588; /*Moradito*/
+	color:white;
+	width:8em;
+	letter-spacing: .1em;
+	box-shadow: 2px 2px 1px gray;
+	height:1.5em;
+	line-height: 1.6em;
+	text-align: center;
+}
+nav{
+	margin-top: 30px;
+	background: #5D6064;
+	width: 100%;
+	margin-bottom: 0.1em
+}
+
+nav ul{
+	line-height:1.5em;
+}
+
+nav ul li{
+	height: 1.5em;
+	padding:10px 20px;
+	display:inline-block;
+	cursor: pointer;
+}
+
+
+nav ul li:hover{
+	background:#BD3588; /*Mismo moradito*/
+}
+
+nav ul li a{
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	text-align: center;
+	display:block;
+	color:white;
+	text-decoration: none;
+}
+.clear{
+	float: none;
+	clear:both;
+}
+
+footer{
+	float:none;
+	clear:both;
+	margin-top: 30px;
+	background: #5D6064;
+	width: 100%;
+	margin-bottom: 0.1em;
+}
+
+
+footer img{
+	margin:0.5em; 
+	width:6%;
+	border-radius: 50%;
+}
+
+footer span{
+	position: relative;
+	left:6.5em;
+}
+
+.ig{
+	position: relative;
+	bottom:1.5em;
+	color:white;
+	font-weight: bold;
+	margin-right: 2.5em;
+}
+
+.clear{
+	float: none;
+	clear:both;
+}
