@@ -3,12 +3,37 @@
 	padding:0;
 	font-family:"Helvetica", Arial;
 }
-/* Cuerpo de la pagina */
-body{
-	background-image: url(../imagenes/linkin-park.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: 100% 100%;
+
+#themes{
+	background: rgba(99,99,99,0.7);
+	position:fixed;
+	top:40%;
+	width:50px;
+	height:120px;
+}
+
+#purple, #blue, #orange{
+	margin:0 auto;
+	width:30px;
+	height:30px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	display:block;
+	border:1px solid white;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+#purple{
+	background: #BD3588;
+}
+
+#blue{
+	background: #4E6AF9;
+}
+
+#orange{
+	background: #FF8700;
 }
 
 .caja{
@@ -25,7 +50,6 @@ body{
 	padding:5px;
 	display:block;
 	font-size:35px;
-	background:#BD3588; /*Moradito*/
 	color:white;
 	width:8em;
 	letter-spacing: .1em;
@@ -52,11 +76,6 @@ nav ul li{
 	cursor: pointer;
 }
 
-
-nav ul li:hover{
-	background:#BD3588; /*Mismo moradito*/
-}
-
 nav ul li a{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -67,6 +86,12 @@ nav ul li a{
 }
 
 /*Slider*/
+
+.bx-wrapper{
+	position: relative;
+	left:100px;
+	width:650px;
+}
 
 /*Texto de relleno*/
 
@@ -97,13 +122,26 @@ nav ul li a{
 	text-align: justify;
 }
 
+#reloj{
+	display:block;
+	border:0px;
+	border-radius: 5px;
+	color:white;
+	font-size: 40px;
+	padding:20px;
+	width:30%;
+	text-align: center;
+	float:left;
+	margin-top: 50px;
+	margin-left: 40px
+}
+
 .botonsito{
 	display:block;
 	font-size: 14px;
 	padding:1em;
 	width: 6.8em;
 	text-align: center;
-	background: #BD3588; /*Mismo moradito*/
 	color:white;
 	text-decoration: none;
 	margin-top: 1em;
@@ -130,7 +168,7 @@ aside .botonsito{
 
 aside{
 	width:30%;
-	float:left;
+	float:right;
 	margin-top: 1.5em;
 	color:#5D6064;
 }
@@ -177,17 +215,8 @@ form input[type="password"], form input[type="text"]{
 	border-radius: 2px;
 	padding:2px;
 	box-sizing:border-box;
-	border:2px solid #BD3588;
 }
-/*
-form input[type="text"]{
-	margin:0.25em;
-	display:block;
-	border-radius: 2px;
-	padding:2px;
-	box-sizing:border-box;
-	border:2px solid #BD3588;
-}*/
+
 
 input:focus{
 	outline: none;
@@ -200,7 +229,6 @@ form input[type="submit"]{
 	width: 58%;
 	border-radius: 2px;
 	text-align: center;
-	background: #BD3588; /*Mismo moradito*/
 	color:white;
 	font-weight: bold;
 	text-decoration: none;
@@ -254,4 +282,24 @@ footer span{
 .clear{
 	float: none;
 	clear:both;
+}
+
+#scroll{
+	text-decoration: none;
+	color:white;
+	display:block;
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	background: rgba(99,99,99,0.7);
+	position: fixed;
+	top:90.55%;
+	left:82.18%;
+}
+
+#scroll i{
+	font-size: 250%;
+	margin:0 auto;
+	margin-top: 10%;
+	margin-left: 15%
 }

@@ -1,11 +1,25 @@
 <html>
 <head>
 	<meta charset = "utf-8">
+	<!-- Estilos -->
+	<link rel="stylesheet" href="estilos/purple.css" id = "theme-selector">
 	<link rel="stylesheet" href="estilos/home.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<!-- Scripts -->
+	<script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
 	<script type="text/javascript" src='scripts/index.js'></script>
+	<!-- Slider -->
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<!-- Titulo -->
 	<title>Pagina cool</title>
 </head>
 <body>
+	<div id = "themes">
+		<div id = "purple"></div>
+		<div id = "blue"></div>
+		<div id = "orange"></div>
+	</div>
 	<div class = "caja">
 		<header>
 			<h1 class = "encabezado">Practicando</h1>
@@ -14,19 +28,32 @@
 				<ul>
 					<li><b><a href="#">INICIO</a></b></li>
 					<li><b><a href="html/clock.html">RELOJ</a></b></li>
-					<li><b><a href="html/failed.html">SOBRE MI</a></b></li>
+					<li><b><a href="" id = "about-fail">SOBRE MI</a></b></li>
 					<li><b><a href="html/sign-up.html">REGISTRAR</a></b></li>
 				</ul>
 			</nav>
 		</header>
-		<!-- Slider 
-		<div>
-			<img src="imagenes/posty.jpg" class = "posty">
+		<!-- Slider-->
+		<br>
+		<div class="slider">
+			<div><img src="imagenes/image-1.jpg"></div>
+			<div><img src="imagenes/image-2.jpg"></div>
+			<div><img src="imagenes/image-3.jpg"></div>
 		</div>
-		-->
+
 		<!-- Articulos -->
 		<section class = "main">
 			<section class = "articles">
+				<article>
+					<h2>Texto de relleno</h2>
+					<p class = "ppp">Fecha de publicacion</p>
+					<p class = "pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</article>
 				<article>
 					<h2>Texto de relleno</h2>
 					<p class = "ppp">Fecha de publicacion</p>
@@ -46,7 +73,7 @@
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. </p>
 
-				<div id = "login" class "login">
+				<div id = "login" class = "login">
 					<h3>Login</h3>
 					<form id = "logear" onsubmit = "return false;">
 						<label for = "usuario"><b>Usuario: </b></label>
@@ -71,5 +98,6 @@
 			<span class = "clear"></span>
 		</footer>
 	</div>
+	<a href="#" id = "scroll"><i class="fa fa-sort-up"></i></a>
 </body>
 </html>

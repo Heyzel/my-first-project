@@ -1,1 +1,72 @@
-Aqui va el reloj
+<html>
+<head>
+	<meta charset = "utf-8">
+	<!-- Estilos -->
+	<link rel="stylesheet" href="../estilos/purple.css" id = "theme-selector">
+	<link rel="stylesheet" href="../estilos/home.css">
+	<!-- Scripts -->
+	<script type="text/javascript" src="../scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src='../scripts/clock.js'></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+	<!-- Titulo -->
+	<title>Pagina cool</title>
+</head>
+<body>
+	<div id = "themes">
+		<div id = "purple"></div>
+		<div id = "blue"></div>
+		<div id = "orange"></div>
+	</div>
+	<div class = "caja">
+		<header>
+			<h1 class = "encabezado">Practicando</h1>
+			<!-- Menu -->
+			<nav>
+				<ul>
+					<li><b><a href="../index.html">INICIO</a></b></li>
+					<li><b><a href="#">RELOJ</a></b></li>
+					<li><b><a href="" id ="about-fail">SOBRE MI</a></b></li>
+					<li><b><a href="sign-up.html">REGISTRAR</a></b></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Articulos -->
+		<section class = "main">
+			<div id = "reloj">
+
+			</div>
+			<!-- Articulo lateral -->
+			<aside>
+				<h4>¿Quien soy?</h4>
+				<img src="../imagenes/bunny.jpg" class = "babuny"/>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. </p>
+
+				<div id = "login" class = "login">
+					<h3>Login</h3>
+					<form id = "logear" onsubmit = "return false;">
+						<label for = "usuario"><b>Usuario: </b></label>
+						<input type = "text" id = "usuario"/>
+						<p id = "warning">El usuario no existe</p>
+						<label for = "contraseña"><b>Contraseña: </b></label>
+						<input type = "password" id = "contraseña"/>
+						<p id = "warning2">La contraseña es incorrecta</p>
+						<input type = "submit" value = "Iniciar sesión"/>
+					</form>
+				</div>
+			</aside>
+		</section>
+		<span class = "clear"></span>
+		<footer>
+			<span> <img src="../imagenes/yo.jpg"/></span>
+			<span class = "ig" >@99heyzel</span> 
+			<span><img src="../imagenes/andrea.jpg"/></span>
+			<span class = "ig" >@anmau1910</span>
+			<span><img src="../imagenes/miguel.jpg"/></span>
+			<span class = "ig" >@whatevering_around</span>
+			<span class = "clear"></span>
+		</footer>
+	</div>
+</body>
+</html>

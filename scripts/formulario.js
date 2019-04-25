@@ -2,6 +2,32 @@
 
 var usuario;
 window.addEventListener('load', function(){
+
+	var tema = $("#theme-selector");
+
+	if(localStorage.getItem("tema") == "morado"){
+		tema.attr("href","../estilos/purple.css");
+	}else if(localStorage.getItem("tema") == "azul"){
+		tema.attr("href","../estilos/blue.css");
+	}else if(localStorage.getItem("tema") == "naranja"){
+		tema.attr("href","../estilos/orange.css");
+	}else{
+		tema.attr("href","../estilos/purple.css");
+	}
+
+	$("#purple").click(function(){
+		tema.attr("href","../estilos/purple.css");
+		localStorage.setItem("tema","morado");
+	});
+	$("#blue").click(function(){
+		tema.attr("href","../estilos/blue.css");
+		localStorage.setItem("tema","azul");
+	});
+	$("#orange").click(function(){
+		tema.attr("href","../estilos/orange.css");
+		localStorage.setItem("tema","naranja");
+	});
+	
 	var formulario = document.querySelector('#reg');
 	formulario.addEventListener('submit', function(event){
 

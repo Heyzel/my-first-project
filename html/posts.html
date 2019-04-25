@@ -1,1 +1,82 @@
-Aqui va el listado de posts
+<html>
+<head>
+	<meta charset = "utf-8">
+	<link rel="stylesheet" href="../estilos/posts.css">
+	<script type="text/javascript" src="../scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="../scripts/posts.js"></script>
+	<link rel="stylesheet" href="../estilos/purple.css" id = "theme-selector">
+	<title>Articulos</title>
+</head>
+<body>
+	<div id = "themes">
+		<div id = "purple"></div>
+		<div id = "blue"></div>
+		<div id = "orange"></div>
+	</div>
+	<div class = "caja">
+		<header>
+			<h1 class = "encabezado">Practicando</h1>
+			<a href="../index.html" id = "logout" class = "botonsito">Cerrar sesión</a>
+			<!-- Menu -->
+			<nav>
+				<ul>
+					<li><b><a href="../index.html">INICIO</a></b></li>
+					<li><b><a href="clock.html">RELOJ</a></b></li>
+					<li><b><a href="" id = "about-fail">SOBRE MI</a></b></li>
+					<li><b><a href="sign-up.html">REGISTRAR</a></b></li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			<article class = "articles">
+				<h2>Artículo 1</h2>
+				<p class = "fecha">Publicado el dia: </p>
+				<p class = "pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. <span id = "boton1" style = 'display: none'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+				<button class = "botonsito" id = "1" onclick=vermas('1','boton1')>Ver más</button>
+			</article>
+			<article class = "articles">
+				<h2>Artículo 2</h2>
+				<p class = "fecha">Publicado el dia: </p>
+				<p class = "pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. <span id = "boton2" style = 'display: none'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+				<button class = "botonsito" id = "2" onclick=vermas('2','boton2')>Ver más</button>
+			</article>
+			<article class = "articles">
+				<h2>Artículo 3</h2>
+				<p class = "fecha">Publicado el dia: </p>
+				<p class = "pp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse	cillum dolore eu fugiat nulla pariatur. <span id = "boton3" style = 'display: none'>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
+				<button class = "botonsito" id = "3" onclick=vermas('3','boton3')>Ver más</button>
+			</article>
+			<button class = "botonsito" id = "post" onclick=postear()>Escribir artículo</button>
+			<p id = "warning">Debe iniciar sesión</p>
+		</section>
+		<span class = "clear"></span>
+		<footer>
+			<span> <img src="../imagenes/yo.jpg"/></span>
+			<span class = "ig" >@99heyzel</span> 
+			<span><img src="../imagenes/andrea.jpg"/></span>
+			<span class = "ig" >@anmau1910</span>
+			<span><img src="../imagenes/miguel.jpg"/></span>
+			<span class = "ig" >@whatevering_around</span>
+			<span class = "clear"></span>
+		</footer>
+	</div>
+</body>
+</html>

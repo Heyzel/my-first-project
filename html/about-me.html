@@ -2,25 +2,62 @@
 <head>
 	<meta charset = "utf-8">
 	<link rel="stylesheet" href="../estilos/about-me.css">
+	<link rel="stylesheet" href="../scripts/jquery-ui-1.12.1/jquery-ui.min.css">
+	<link rel="stylesheet" href="../scripts/jquery-ui-1.12.1/jquery-ui.structure.css">
+	<link rel="stylesheet" href="../scripts/jquery-ui-1.12.1/jquery-ui.theme.css">
+	<link rel="stylesheet" href="../estilos/purple.css" id = "theme-selector">
+	<script type="text/javascript" src = "../scripts/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src = "../scripts/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src = "../scripts/about-me.js"></script>
 	<title>Pagina cool</title>
 </head>
 <body>
+	<div id = "themes">
+		<div id = "purple"></div>
+		<div id = "blue"></div>
+		<div id = "orange"></div>
+	</div>
 	<div class = "caja">
 		<header>
 			<h1 class = "encabezado">Practicando</h1>
+			<a href="../index.html" id = "logout" class = "botonsito">Cerrar sesión</a>
 			<!-- Menu -->
 			<nav>
 				<ul>
 					<li><b><a href="../index.html">INICIO</a></b></li>
-					<li><b><a href="html/clock.html">RELOJ</a></b></li>
+					<li><b><a href="clock.html">RELOJ</a></b></li>
 					<li><b><a href="#">SOBRE MI</a></b></li>
-					<li><b><a href="html/sign-up.html">REGISTRAR</a></b></li>
+					<li><b><a href="sign-up.html">REGISTRAR</a></b></li>
 				</ul>
 			</nav>
 		</header>
 		<section class = "main">
-
+			<div id = "acordeonsito">
+				<h3>Mi cuenta</h3>
+				<div><p id = "misdatos"></p></div>
+				<h3>Cambiar contraseña</h3>
+				<div>
+					<form id = "changepass" onsubmit = "return false;">
+						<input type = "password" placeholder = "Contraseña..." id = "pass"/>
+						<input type = "password" placeholder = "Repita contraseña..." id = "repass"/>
+						<input type = "submit" value = "Confirmar"/>
+					</form>
+				</div>
+				<h3>Cambiar correo electronico</h3>
+				<div>
+					<form id = "changemail" onsubmit = "return false;">
+						<input type = "mail" id = "correo" placeholder = "Correo electronico"/>
+						<input type = "submit" value = "Confirmar"/>
+					</form>
+				</div>
+				<h3>Cambiar nombre de usuario</h3>
+				<div>
+					<form id = "changename" onsubmit = "return false;">
+						<input type = "text" id = "nombre" placeholder = "Nombre de usuario">
+						<input type = "submit" value = "Confirmar"/>
+					</form>
+				</div>
+			</div>
 		</section>
 		<span class = "clear"></span>
 		<footer>

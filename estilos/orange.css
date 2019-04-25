@@ -1,0 +1,41 @@
+body{
+	background-image: url(../imagenes/bg-orange.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.encabezado, nav ul li:hover, .botonsito, form input[type="submit"], .fregistro, .registro input[type="submit"], form a{
+	background:#FF8700;
+}
+
+#reloj{
+	background:#FF8700;
+}
+
+.botonsito:hover{
+	background:#FF9E30;
+}
+
+ .registro input, input[type="text"], textarea, input[type="password"],input[type="mail"]{
+ 	border:2px solid #FF8700;
+ }
+
+#acordeonsito h3{
+	background:#FF8700;
+	color:white;
+}
+
+#acordeonsito h3:active, #acordeonsito h3:hover, #acordeonsito h3:focus{
+	background:#FF9E30;
+	color:white;
+	font-weight: bold;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	border:1px solid #FF8700;
+}
+
+ input[type="text"]:focus, textarea:focus{
+	outline-color:#FF8700;
+}

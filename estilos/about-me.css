@@ -11,6 +11,38 @@ body{
 	background-size: 100% 100%;
 }
 
+#themes{
+	background: rgba(99,99,99,0.7);
+	position:fixed;
+	top:40%;
+	width:50px;
+	height:120px;
+}
+
+#purple, #blue, #orange{
+	margin:0 auto;
+	width:30px;
+	height:30px;
+	margin-top: 6px;
+	margin-bottom: 3px;
+	display:block;
+	border:1px solid white;
+	border-radius:2px;
+	cursor:pointer;
+}
+
+#purple{
+	background: #BD3588;
+}
+
+#blue{
+	background: #4E6AF9;
+}
+
+#orange{
+	background: #FF8700;
+}
+
 .caja{
 	width: 65%;
 	padding:30px;
@@ -23,9 +55,8 @@ body{
 /*Cabecera*/
 .encabezado{
 	padding:5px;
-	display:block;
+	display:inline-block;
 	font-size:35px;
-	background:#BD3588; /*Moradito*/
 	color:white;
 	width:8em;
 	letter-spacing: .1em;
@@ -34,6 +65,72 @@ body{
 	line-height: 1.6em;
 	text-align: center;
 }
+
+.botonsito{
+	position:relative;
+	left: 21.75em;
+	bottom:0.8em;
+	display:inline-block;
+	font-size: 20px;
+	padding:0px;
+	width: 8em;
+	padding-top: 6px;
+	text-align: center;
+	color:white;
+	text-decoration: none;
+	border-radius: 2px;
+	font-weight: bold;
+	height: 1.5em;
+	cursor:pointer;
+}
+
+.ui-helper-reset{
+	outline:none;
+}
+
+input[type="password"]{
+	margin-right: 70%;
+	margin-bottom: 10px;
+	padding:5px;
+}
+
+input[type="text"]{
+	padding:5px;
+	margin-bottom:10px;
+}
+
+input[type="mail"]{
+	padding:5px;
+	margin-bottom:10px;
+}
+
+input[type="password"]:focus{
+	outline:none;
+}
+
+input[type="submit"]{
+	display:block;
+	padding:10px;
+	color:white;
+	font-weight: bold;
+	cursor:pointer;
+	border-radius: 2px;
+	border:0px;
+	margin-top: 0px
+}
+
+#acordeonsito{
+	width:80%;
+}
+
+#acordeonsito h3 span{
+	color:white;
+}
+
+#acordeonsito h3:focus, #acordeonsito h3:active{
+	outline:none;
+}
+
 nav{
 	margin-top: 30px;
 	background: #5D6064;
@@ -52,11 +149,6 @@ nav ul li{
 	cursor: pointer;
 }
 
-
-nav ul li:hover{
-	background:#BD3588; /*Mismo moradito*/
-}
-
 nav ul li a{
 	padding-left: 0.5em;
 	padding-right: 0.5em;
@@ -65,6 +157,7 @@ nav ul li a{
 	color:white;
 	text-decoration: none;
 }
+
 .clear{
 	float: none;
 	clear:both;
